@@ -1,6 +1,10 @@
 // bundle.scss
 
-
+// Bootstrap First:
+// start with importing bootstrap
+// in case we want to quickly override a style
+// by declaring it later
+@import 'components/modified-bootstrap.scss';
 
 // Abstracts - order matters
 @import 'abstracts/variables';
@@ -12,5 +16,17 @@
 @import 'base/typography';
 
 // Components - order does NOT matter
-@import 'components/modified-bootstrap.scss';
 @import 'components/PageWrapper';
+@import 'components/_boostrapModifications';
+@import 'components/CheckMarkList';
+@import 'components/ClientInfoList';
+@import 'components/Footer';
+@import 'components/Form';
+@import 'components/FramedBlock';
+@import 'components/Hero';
+@import 'components/LogoImg';
+@import 'components/MainWrapper';
+@import 'components/MainContent';
+@import 'components/SubHero';
+
+

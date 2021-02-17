@@ -1,6 +1,12 @@
+// _resets.css
+
 img {
   display: block;
   width: 100%;
   // fix blurry images in chrome
   image-rendering: -webkit-optimize-contrast;
+}
+
+li {
+  list-style-type: none;
 }

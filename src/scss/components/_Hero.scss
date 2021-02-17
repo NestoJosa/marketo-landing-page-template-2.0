@@ -1,0 +1,36 @@
+// _Hero.scss
+
+/* 
+
+  Hero
+
+*/
+
+.Hero { 
+  padding-top: 15%;
+  padding-bottom: 14%;
+
+  &__category {
+    color: map-get($brand-colors, 'purple');
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.7rem;
+  }
+
+  &__heading {
+    color: map-get($brand-colors, 'purple');
+    margin-bottom: 0.5rem;
+  }
+
+  &__subHeading {
+    color: map-get($brand-colors, 'purple');
+    font-size: 1.5rem;
+  }
+}
+
+.Hero--changePadding {
+  @include media-breakpoint-up (md) {
+    padding-top: 23%;
+    padding-bottom: 20%;
+  }
+}

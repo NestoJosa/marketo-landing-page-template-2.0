@@ -1,0 +1,22 @@
+// _boostrapModifications.scss
+
+/* 
+
+  Bootstrap Modifications
+
+*/
+
+
+.navbar {
+  // set a white background
+  background-color: map-get($brand-colors, 'white');
+}
+
+// add more top- and bottom padding to the 
+// bootstrap navbar-brand class
+.navbar-brand {
+  // OG: padding-top: .3125rem;
+  // OG: padding-bottom: .3125rem;
+  padding-top: .8125rem;
+  padding-bottom: .8125rem;
+}

@@ -1,0 +1,18 @@
+// _SubHero.scss
+
+/* 
+
+  SubHero
+
+*/
+
+.SubHero {
+  padding: 0;
+
+  // if the order of the hero and subhero has been changed
+  // so that the subhero sits on top of the hero
+  // make sure this change is reverted on md up
+  @include media-breakpoint-up(md) {
+    order: 2 !important;
+  }
+}

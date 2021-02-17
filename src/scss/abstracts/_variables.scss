@@ -1,5 +1,21 @@
 // _variables.scss
 
 $brand-colors: (
-  'white--cream': #fbf9f0,
+  'white': #fbf9f0,
+  'purple': #3b012d,
+  'yellow': #ffc900,
+  'red': #ff582d, 
 );
+
+$border: solid 4px #f4f6ff;
+
+$border-radius: 0;
+
+$box-shaddow:
+  0  5px 10px rgba(154,160,185,0.05),
+  0 15px 40px rgba(166,173,201,0.2)
+;
+
+$footerBgColor: map-get($brand-colors, 'purple');
+
+$framedBlockBGColor: #F4F3EE50; // => #RRGGBBAA (red, green, blue, alpha)

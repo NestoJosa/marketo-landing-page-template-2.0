@@ -1,4 +1,115 @@
+// _typography.scss
+
 $brand-fonts: (
-  'primary':  (serif),
-  'secondary':  (sans-serif),
+  'primary':  (neue-haas-unica, sans-serif),
+  'secondary':  (serif),
 );
+
+body {
+  font-family: map-get($brand-fonts, 'primary');
+  color: map-get($brand-colors, 'purple');
+}
+
+// Note: the font-size are set in the responsive typography section
+h1 {
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+h2 {
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+}
+
+h3 {
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+}
+
+h4 {
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+// Note: here we set the font-size, because they are not specified in the specs
+// so we are just copying the styles set in previous marketo landing pages
+h5 {
+  font-size: 1.3rem; 
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+h6 {
+  font-size: 1.1rem; 
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+p {
+  opacity: 0.72;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  // scale the paragraphs on md-up? just like on sputnik? 
+}
+
+a {
+  text-decoration: underline;
+}
+
+ul {
+  font-size: 1.1rem;
+}
+
+/* 
+
+  Responsive Typography
+
+*/
+// this will increase the font-size of the selected elements
+@media only screen and ( max-width: map-get($grid-breakpoints, 'xxl') ) {
+  h1          { font-size: calc(1.975rem + 1.5vw); }
+  h2          { font-size: calc(1.325rem + 0.9vw); }
+  h3          { font-size: calc(1.3rem + 0.6vw);   }
+  h4          { font-size: calc(1.275rem + 0.3vw); }
+  legend      { font-size: calc(1.275rem + 0.3vw); }
+  .display-1  { font-size: calc(1.725rem + 5.7vw); }
+  .display-2  { font-size: calc(1.675rem + 5.1vw); }
+  .display-3  { font-size: calc(1.575rem + 3.9vw); }
+  .display-4  { font-size: calc(1.475rem + 2.7vw); }
+  .close      { font-size: calc(1.275rem + 0.3vw); }
+}
+// this will end the increasing of the font-size
+@include media-breakpoint-up(xxl) {
+  h1          { font-size: 59px; }
+  h2          { font-size: 38px; }
+  h3          { font-size: 32px; }
+  h4          { font-size: 26px; }
+  legend      { font-size: 26px; }
+  .display-1  { font-size: 131px; }
+  .display-2  { font-size: 119px; }
+  .display-3  { font-size: 96px; }
+  .display-4  { font-size: 73px; }
+  .close      { font-size: 26px; }
+}
