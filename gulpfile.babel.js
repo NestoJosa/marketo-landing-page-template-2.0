@@ -71,7 +71,7 @@ const server = browserSync.create();
 export const serve = done => {
   server.init({
     // put your local website link here:
-    proxy: "http://192.168.0.15:8888/marketo-landing-page-template-2.0/dist/index.html" 
+    proxy: "http://192.168.68.101:8888/marketo-landing-page-template-2.0/dist/index.html" 
   });
   done();
 };

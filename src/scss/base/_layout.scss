@@ -1,0 +1,7 @@
+// _layout.scss
+
+@include media-breakpoint-up (xxl) {
+  .container {
+    max-width: 1400px;
+  }
+}

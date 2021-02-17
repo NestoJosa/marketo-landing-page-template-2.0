@@ -1,81 +1,58 @@
 // _typography.scss
 
 $brand-fonts: (
-  'primary':  (neue-haas-unica, sans-serif),
+  'primary':  ("Open Sans", sans-serif),
   'secondary':  (serif),
+);
+
+$brand-font-colors: (
+  'one': #222328,
+  'two': #5F5F63,
+  'three': #FFFFFF,
 );
 
 body {
   font-family: map-get($brand-fonts, 'primary');
-  color: map-get($brand-colors, 'purple');
+  color: map-get($brand-font-colors, 'one');
 }
 
-// Note: the font-size are set in the responsive typography section
+// Note: the font-sizes for h1-h4 are set in
+// the responsive typography section
 h1 {
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
+  line-height: 1.25;
 }
 
 h2 {
-  font-weight: 700;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
+  line-height: 1.25;
 }
 
 h3 {
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
+  line-height: 1.25;
 }
 
 h4 {
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
+  line-height: 1.35;
 }
 
-// Note: here we set the font-size, because they are not specified in the specs
-// so we are just copying the styles set in previous marketo landing pages
+// Note: the font-sizes for h5, h6 and p's are not responsive
 h5 {
   font-size: 1.3rem; 
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-}
+  line-height: 1.35;
+} 
 
 h6 {
   font-size: 1.1rem; 
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
+  line-height: 1.35;
 }
 
 p {
-  opacity: 0.72;
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.4;
-  letter-spacing: normal;
-  // scale the paragraphs on md-up? just like on sputnik? 
+  font-size: 1.1rem;
+  line-height: 1.65;
 }
 
 a {
-  text-decoration: underline;
+  // why is this set when underline is default? 
+  text-decoration: underline; 
 }
 
 ul {
@@ -87,7 +64,9 @@ ul {
   Responsive Typography
 
 */
-// this will increase the font-size of the selected elements
+// this will increase the font-size of the selected elements,
+// when the viewport increases in size.
+// Note: its max-width in this media query
 @media only screen and ( max-width: map-get($grid-breakpoints, 'xxl') ) {
   h1          { font-size: calc(1.975rem + 1.5vw); }
   h2          { font-size: calc(1.325rem + 0.9vw); }
@@ -100,7 +79,7 @@ ul {
   .display-4  { font-size: calc(1.475rem + 2.7vw); }
   .close      { font-size: calc(1.275rem + 0.3vw); }
 }
-// this will end the increasing of the font-size
+// this will stop the increasing of the font-size
 @include media-breakpoint-up(xxl) {
   h1          { font-size: 59px; }
   h2          { font-size: 38px; }
