@@ -8,7 +8,6 @@ $brand-fonts: (
 $brand-font-colors: (
   'one': #222328,
   'two': #5F5F63,
-  'three': #FFFFFF,
 );
 
 body {
@@ -51,7 +50,7 @@ p {
 }
 
 a {
-  // why is this set when underline is default? 
+  // why is this set when underline is default? #refactor
   text-decoration: underline; 
 }
 

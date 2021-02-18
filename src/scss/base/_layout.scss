@@ -1,6 +1,8 @@
 // _layout.scss
 
-@include media-breakpoint-up (xxl) {
+
+// set the same media-query as was set in the old files
+@media only screen and (min-width: 1800px) {
   .container {
     max-width: 1400px;
   }

@@ -20,7 +20,7 @@
 
   &__item {
     margin-bottom: .4rem;
-    list-style-type:none;
+    list-style-type: none;
     padding-left: 1rem;
 
     // create the checkmark
@@ -28,7 +28,7 @@
       font-family: 'FontAwesome';
       content: "\f00c";
       margin: 0 10px 0 -28px;
-      color: map-get($brand-colors, 'purple');
+      color: map-get($brand-colors, 'one');
     }
   }
 }

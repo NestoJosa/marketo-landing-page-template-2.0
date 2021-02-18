@@ -11,26 +11,26 @@
   padding-bottom: 14%;
 
   &__category {
-    color: map-get($brand-colors, 'purple');
+    color: #ffffff;
     font-size: 1.2rem;
     text-transform: uppercase;
     margin-bottom: 1.7rem;
   }
 
   &__heading {
-    color: map-get($brand-colors, 'purple');
+    color: #ffffff;
     margin-bottom: 0.5rem;
   }
 
   &__subHeading {
-    color: map-get($brand-colors, 'purple');
+    color: #ffffff;
     font-size: 1.5rem;
   }
 }
 
 .Hero--changePadding {
-  @include media-breakpoint-up (md) {
+  @media only screen and (min-width: 1800px ) {
     padding-top: 23%;
-    padding-bottom: 20%;
-  }
+    padding-bottom: 20%;  
+  } 
 }
