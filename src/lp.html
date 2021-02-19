@@ -4,6 +4,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
 
   <!-- Marketo Variables -->
   <meta class="mktoString" id="buttonText" mktoName="Button CTA Text" default="{{my.CON CTA Button}}">
@@ -118,7 +119,7 @@
   {{my.DEV Folder GTM JS}}
   {{my.DEV Comment Open}} / End of Google Tag Manager Token-->
 
-  <!-- Tokenized Head CSS, just in case {{my.DEV Comment Close}}
+    <!-- Tokenized Head CSS, just in case {{my.DEV Comment Close}}
   {{my.DEV Universal Head CSS}}
   {{my.DEV Folder Head CSS}}
   {{my.DEV Content Head CSS}}
@@ -249,22 +250,22 @@
 
   <!-- Marketo Form JavaScript -->
   <script> 
-  MktoForms2.whenReady(function(form) {  
+	MktoForms2.whenReady(function(form) {  
 
-    //Removes any querystring in the URL before logging Latest Form URL
-    {{my.LP Latest Form URL Script}}
+      //Removes any querystring in the URL before logging Latest Form URL
+      {{my.LP Latest Form URL Script}}
 
-    //Rewrites follow up URL so it uses same domain as form page
-    {{my.LP Rewrite follow up URL}}    
+      //Rewrites follow up URL so it uses same domain as form page
+      {{my.LP Rewrite follow up URL}}
+      
     });
 
   </script>
 
-  <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <!-- Tokenized Foot JS, just in case {{my.DEV Comment Close}}
   {{my.DEV Universal Foot JS}}
