@@ -1,0 +1,20 @@
+// _more-bootstrap-modifications.scss
+
+/* 
+
+  This file is for additional bootstrap modifications,
+  that make use of any sass map and/or variables that are declared
+  in abstracts and/or base.
+
+*/
+
+.navbar {
+  background-color: map-get($brand-colors, 'three');
+}
+
+// add more top- and bottom padding to the 
+// bootstrap navbar-brand class
+.navbar-brand {
+  padding-top: .940rem;
+  padding-bottom: .940rem;
+}
