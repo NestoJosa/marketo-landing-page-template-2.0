@@ -1,5 +1,40 @@
 // ClientInfoList.scss
 
+
+.ClientInfoListWrapper {
+  margin-bottom: 40px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+}
+
 .ClientInfoList {
   color: white;
+
+  // this targets the first two list items
+  &__item:nth-child(-n+2) a {
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: map-get($brand-colors, 'two');
+    text-decoration: none;
+  }
+
+  &__item:nth-child(2) {
+    margin-bottom: 32px;
+  }
+
+  &__item:nth-child(n+3) {
+    height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+  }
+  
 }
