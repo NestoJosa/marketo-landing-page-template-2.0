@@ -1,8 +1,10 @@
 // _variables.scss
 
 $brand-colors: (
-  'one': #88BBCC,
-  'two': #CBA29E,
+  'one': #3b012d,
+  'two': #ffc900,
+  'three': #fbf9f0,
+  'four': #ff582d,
 );
 
 $border: solid 4px #f4f6ff;
@@ -14,6 +16,6 @@ $box-shaddow:
   0 15px 40px rgba(166,173,201,0.2)
 ;
 
-$footerBgColor: #F4F3EE;
+$footerBgColor: map-get($brand-colors, 'one');
 
 $framedBlockBGColor: #F4F3EE50; // => #RRGGBBAA (red, green, blue, alpha)

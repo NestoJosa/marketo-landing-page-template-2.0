@@ -9,21 +9,20 @@
 .Hero { 
   padding-top: 15%;
   padding-bottom: 14%;
+  color: map-get($brand-colors, 'one');
 
   &__category {
-    color: #ffffff;
     font-size: 1.2rem;
     text-transform: uppercase;
     margin-bottom: 1.7rem;
   }
 
   &__heading {
-    color: #ffffff;
     margin-bottom: 0.5rem;
   }
 
   &__subHeading {
-    color: #ffffff;
+    opacity: 0.72;
     font-size: 1.5rem;
   }
 }

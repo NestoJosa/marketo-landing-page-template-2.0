@@ -9,6 +9,10 @@
 $brand-fonts-primary: map-get($brand-fonts, 'primary');
 $brand-color-one: map-get($brand-colors, 'one');
 
+// Button
+$submit-btn-bg-color: map-get($brand-colors, 'two');
+$submit-btn-txt-color: map-get($brand-colors, 'one');
+
 
 .Form {
   background-color: #FFFFFF;
@@ -307,10 +311,10 @@ body .mktoForm .mktoRadioList > label {
   line-height: 1.5 !important;
   text-align: center !important;
   text-transform: uppercase !important;
-  background-color: $brand-color-one !important;
+  background-color: $submit-btn-bg-color !important;
   border-radius: $border-radius !important;
   border: none !important;
-  color: #ffffff !important;
+  color: $submit-btn-txt-color !important;
   font-size: 16px !important;
   padding-top: 1.1em !important;
   padding-bottom: 1.15em !important;

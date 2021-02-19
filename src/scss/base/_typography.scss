@@ -1,13 +1,12 @@
 // _typography.scss
 
 $brand-fonts: (
-  'primary':  ("Open Sans", sans-serif),
+  'primary':    (neue-haas-unica, sans-serif),
   'secondary':  (serif),
 );
 
 $brand-font-colors: (
-  'one': #222328,
-  'two': #5F5F63,
+  'one': map-get($brand-colors, 'one'),
 );
 
 body {
