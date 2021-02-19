@@ -11,25 +11,49 @@
   padding-bottom: 14%;
   color: map-get($brand-colors, 'one');
 
+  // aka preHeading
   &__category {
-    font-size: 1.2rem;
+    color: map-get($brand-colors, 'four');
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: 0.6px;
     text-transform: uppercase;
+
     margin-bottom: 1.7rem;
   }
 
   &__heading {
-    margin-bottom: 0.5rem;
+    font-size: 30px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+
+    margin-bottom: 24px;
+    @include media-breakpoint-up (md) {
+      font-size: 40px;
+      margin-bottom: 32px;
+    }
   }
 
   &__subHeading {
+    font-size: 20px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
     opacity: 0.72;
-    font-size: 1.5rem;
   }
 }
 
 .Hero--changePadding {
   @media only screen and (min-width: 1800px ) {
-    padding-top: 23%;
-    padding-bottom: 20%;  
+    padding-top: 15%;
+    padding-bottom: 15%;  
   } 
 }

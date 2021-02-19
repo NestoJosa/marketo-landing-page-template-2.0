@@ -17,4 +17,8 @@
 .navbar-brand {
   padding-top: .940rem;
   padding-bottom: .940rem;
+  @include media-breakpoint-up(md) {
+    padding-top: 1.94rem;
+    padding-bottom: 1.94rem;
+  }
 }
