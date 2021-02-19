@@ -2,4 +2,10 @@
 
 .MainContent {
   margin-bottom: 20px;
+
+  &__body {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.72;
+  }
 }
