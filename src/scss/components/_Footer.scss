@@ -31,15 +31,11 @@
   }
 
   &__anchor {
-    width: 32px;
-    display: inline-block;
-    border-radius: 50px;
+    display: block;
+    width: 40px;
+    height: 40px;
   }
 
-  &__image {
-    width: 100%;
-    border-radius: 50px;
-  }
 }
 
 
