@@ -22,9 +22,27 @@ $submit-btn-txt-color: map-get($brand-colors, 'one');
   -webkit-box-shadow: 2px 4px 32px 0px rgba(0, 0, 0, 0.12);
   box-shadow:         2px 4px 32px 0px rgba(0, 0, 0, 0.12);
 
+  // wraps the __heading and __subHeading
+  &__preTextWrp {
+    // do something
+  }
+
+  &__heading {
+    // do something
+  }
+  &__subHeading {
+    // do something
+  }
+
+  // wraps the actual form and input fields
   &__mktoForm {
     padding-top: 15px;
   }
+
+  // wraps the privacyLink
+  &__subTextWrp {
+    // do something
+  }  
 
   &__privacyLink {
     text-align: center;
@@ -38,11 +56,9 @@ $submit-btn-txt-color: map-get($brand-colors, 'one');
 }
 
 .Form--changeMargin {
-  @include media-breakpoint-up (md) { 
-    & {
-      margin-top: -147px;
-    }  
-  }  
+  @include media-breakpoint-up (md) {
+    margin-top: -147px;
+  }
 }
 
 // add a down-pointing-arrow to the forms select element 
