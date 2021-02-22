@@ -6,8 +6,19 @@
 
 */
 
+// Fonts
 $brand-fonts-primary: map-get($brand-fonts, 'primary');
 $brand-color-one: map-get($brand-colors, 'one');
+
+
+// refactor: create a brand-color-one--opague and use that instead
+$input-placeholder: scale-color($brand-color-one, $alpha: -24%);
+$privacy-text: $input-placeholder;
+$checkbox-label-color: $input-placeholder;
+$select-label: $input-placeholder;
+
+// Form
+$form-border-radius: 16px;
 
 // Button
 $submit-btn-bg-color: map-get($brand-colors, 'two');
@@ -16,7 +27,7 @@ $submit-btn-txt-color: map-get($brand-colors, 'one');
 
 .Form {
   background-color: #FFFFFF;
-  border-radius: 0;
+  border-radius: $form-border-radius;
   padding: 48px 5%;
   -moz-box-shadow:    2px 4px 32px 0px rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 2px 4px 32px 0px rgba(0, 0, 0, 0.12);
@@ -28,8 +39,18 @@ $submit-btn-txt-color: map-get($brand-colors, 'one');
   }
 
   &__heading {
-    // do something
+    font-size: 22px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    @include media-breakpoint-up(md) {
+      font-size: 28px;
+      line-height: 1.3;
+    }
   }
+
   &__subHeading {
     // do something
   }
@@ -46,7 +67,7 @@ $submit-btn-txt-color: map-get($brand-colors, 'one');
 
   &__privacyLink {
     text-align: center;
-    color: #7d7d7d99;
+    color: $privacy-text;
     font-size: 0.9rem;
 
     &:hover {
@@ -141,7 +162,7 @@ $submit-btn-txt-color: map-get($brand-colors, 'one');
   font-size: 16px !important;
   font-style: normal !important;
   font-weight: 400 !important;
-  color: #2f2f2f  !important;
+  color: $select-label  !important;
   border-color: #FFFFFF !important;
   border-radius: 1px !important;
   border: 1px solid #ced4da !important;
@@ -217,7 +238,7 @@ body .mktoForm .mktoCheckboxList > label {
 
 /*  Puts Checkbox label after Checkbox */
 .mktoCheckboxList input + label:after {
-  color: #325769!important;
+  color: $checkbox-label-color !important;
   font-family: $brand-fonts-primary !important;
   font-size: 14px!important;
   line-height: 20px;
@@ -322,16 +343,16 @@ body .mktoForm .mktoRadioList > label {
 
 .mktoForm .mktoButtonWrap.mktoSimple .mktoButton{
   font-family: $brand-fonts-primary !important;
-  font-weight: 700 !important;
-  letter-spacing: 1px !important;
-  line-height: 1.5 !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.9px !important;
+  line-height: 1.3 !important;
   text-align: center !important;
-  text-transform: uppercase !important;
+  text-transform: none !important;
   background-color: $submit-btn-bg-color !important;
   border-radius: $border-radius !important;
   border: none !important;
   color: $submit-btn-txt-color !important;
-  font-size: 16px !important;
+  font-size: 15px !important;
   padding-top: 1.1em !important;
   padding-bottom: 1.15em !important;
   margin-bottom: 1.7em !important;
@@ -354,16 +375,16 @@ body .mktoForm .mktoRadioList > label {
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #7d7d7d !important;
+  color: $input-placeholder !important;
   opacity: 1 !important; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #7d7d7d !important;
+  color: $input-placeholder !important;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: #7d7d7d !important;
+  color: $input-placeholder !important;
 }
 
 .mktoForm label {
