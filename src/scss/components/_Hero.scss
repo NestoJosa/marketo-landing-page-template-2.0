@@ -8,13 +8,14 @@
 
 .Hero { 
   padding-top: 15%;
-  padding-bottom: 14%;
+  padding-bottom: 15%;
+
   color: map-get($brand-colors, 'one');
 
   // aka preHeading
   &__category {
     color: map-get($brand-colors, 'four');
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -27,7 +28,7 @@
 
   &__heading {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.2;
@@ -51,9 +52,3 @@
   }
 }
 
-.Hero--changePadding {
-  @media only screen and (min-width: 1800px ) {
-    padding-top: 15%;
-    padding-bottom: 15%;  
-  } 
-}
