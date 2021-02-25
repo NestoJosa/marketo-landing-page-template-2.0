@@ -7,20 +7,27 @@
 */
 
 .Hero { 
-  padding-top: 15%;
-  padding-bottom: 15%;
-
   color: map-get($brand-colors, 'one');
 
-  // aka preHeading
-  &__category {
+  @include media-breakpoint-up(md) {
+    padding: 3rem 0 6rem;
+  }
+  
+  &__headings { // wraps the headings
+    margin: 2rem 0 4rem;
+    @include media-breakpoint-up (md) {
+      margin: 0;
+    }
+  }
+
+  &__preHeading {
     color: map-get($brand-colors, 'four');
-    font-size: 16px;
+    font-size: 0.9rem;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.54;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.038rem;
     text-transform: uppercase;
 
     margin-bottom: 1.7rem;
@@ -28,7 +35,7 @@
 
   &__heading {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.2;
@@ -49,6 +56,7 @@
     line-height: 1.4;
     letter-spacing: normal;
     opacity: 0.72;
+    margin-bottom: 0;
   }
 }
 
