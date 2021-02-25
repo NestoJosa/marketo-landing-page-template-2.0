@@ -9,16 +9,16 @@
 .FooterWrapper {
   background-color: map-get($brand-colors, 'one');
   color: #fff;
-  padding-top: 72px;
-  padding-bottom: 56px;
+  padding: 72px 16px 56px;
+  @include media-breakpoint-up(md){
+    padding: 72px 0 56px;
+  }
 }
 
 /* ClientInfoList */
 .ClientInfoList {
   &__item {
-    /* &:first-child {
-      font-weight: bold;
-    } */
+    // do something
   }
 }
 
