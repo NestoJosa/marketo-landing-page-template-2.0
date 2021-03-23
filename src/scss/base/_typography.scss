@@ -50,7 +50,8 @@ p {
 
 a {
   // why is this set when underline is default? #refactor
-  text-decoration: underline; 
+  text-decoration: underline;
+  color: map-get($brand-colors, 'four');
 }
 
 ul {
